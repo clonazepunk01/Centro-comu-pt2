@@ -52,3 +52,27 @@ var marker = new google.maps.Marker({
     title: 'Ciudad de México'  // Cambia el título si es necesario
 });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const calendarContainer = document.getElementById('calendarContainer');
+
+    // Generar un calendario básico
+    const generateCalendar = () => {
+        let calendarHTML = '<table>';
+        calendarHTML += '<thead><tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th><th>Dom</th></tr></thead>';
+        calendarHTML += '<tbody>';
+
+        // Generar las filas del calendario (simulación para un mes)
+        for (let i = 0; i < 5; i++) {
+            calendarHTML += '<tr>';
+            for (let j = 0; j < 7; j++) {
+                calendarHTML += `<td>${i * 7 + j + 1}</td>`;
+            }
+            calendarHTML += '</tr>';
+        }
+        calendarHTML += '</tbody></table>';
+        calendarContainer.innerHTML = calendarHTML;
+    };
+
+    generateCalendar();
+});

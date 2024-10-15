@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="source/styleinit.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Iniciar sesión</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="init.html">Pacientes</a></li>
+                        <li><a href="init.html">Personal</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="container">
+                <h2>Iniciar sesión - Pacientes</h2>
+                <form id="register-form">
+                    <label for="name">Ingrese su Rut o correo electrónico</label>
+                    <input type="text" id="name" name="name" placeholder="ejemplo@gmail.com" required>
+
+                    <label for="email">Contraseña</label>
+                    <input type="email" id="email" name="email" required>
+                    
+
+                    <p class="register-question">¿Olvidaste tu contraseña?</p>
+                    <a class="no-register" href="register.html">Recuperar contraseña</a>
+
+                    <a href="paciente.html" class="register-btn">Ingresar</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Centro Comunitario. Todos los derechos reservados.</p>
+            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
+            <p>Teléfono: +569 123123123</p>
+            <p>Email: centrocomunitarioimperial@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
